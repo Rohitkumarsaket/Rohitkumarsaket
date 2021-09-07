@@ -1,75 +1,66 @@
-
-#include<stdio.h>
+#include < stdio.h >
 
 int main()
-
 {
-    int month , day ;
+    int m, day;
 
-    printf("WELCOME......\n");
-    printf("If you wanna know your Zodiac Sign according to your birth date....\nthen you're at the right place\n ");
+    printf("Enter your birth month(1-12)\n");
+    scanf("%d", &m);
 
-    printf("\n Please enter your month of birth(1-12) : ");
-    scanf("%d", &month);
-    
-    printf("\n Please enter your day of birth : ");
-    scanf("%d",&day);
+    printf("Enter your birth day\n");
+    scanf("%d", &day);
 
-     if( (month == 12 && day >= 22) || (month == 1 && day <= 19) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Capricorn\n");  
-    }  
-    else if( (month == 1 && day >= 20) || (month == 2 && day <= 17) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Aquarius\n");  
-    }  
-    else if( (month == 2 && day >= 18) || (month == 3 && day <= 19) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Pisces\n");  
-    }  
-    else if( (month == 3 && day >= 20) || (month == 4 && day <= 19) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Aries\n");  
-    }  
-    else if( (month == 4 && day >= 20) || (month == 5 && day <= 20) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Taurus\n");  
-    }  
-    else if( (month == 5 && day >= 21) || (month == 6 && day <= 20) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Gemini\n");  
-    }  
-    else if( (month == 6 && day >= 21) || (month == 7 && day <= 22) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Cancer\n");  
-    }  
-    else if( (month == 7 && day >= 23) || (month == 8 && day <= 22) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Leo\n");  
-    }  
-    else if( (month == 8 && day >= 23) || (month == 9 && day <= 22) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Virgo\n");  
-    }  
-    else if( (month == 9 && day >= 23) || (month == 10 && day <= 22) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Libra\n");  
-    }  
-    else if( (month == 10 && day >= 23) || (month == 11 && day <= 21) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Scorpio\n");  
-    }  
-    else if( (month == 11 && day >= 22) || (month == 12 && day <= 21) )  
-    {  
-        printf("Your Zodiac Sign according to your date of birth is Sagittarius\n");  
-    }  
-    else  
-    {  
-        printf("The birth date you entered is invalid\n");  
-    }  
-
-
-
-
+    if( (m == 12 && day >= 22) || (m == 1 && day <= 19) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Capricorn\n");
+    }
+    else if( (m == 1 && day >= 20) || (m == 2 && day <= 17) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Aquarius\n");
+    }
+    else if( (m == 2 && day >= 18) || (m == 3 && day <= 19) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Pisces\n");
+    }
+    else if( (m == 3 && day >= 20) || (m == 4 && day <= 19) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Aries\n");
+    }
+    else if( (m == 4 && day >= 20) || (m == 5 && day <= 20) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Taurus\n");
+    }
+    else if( (m == 5 && day >= 21) || (m == 6 && day <= 20) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Gemini\n");
+    }
+    else if( (m == 6 && day >= 21) || (m == 7 && day <= 22) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Cancer\n");
+    }
+    else if( (m == 7 && day >= 23) || (m == 8 && day <= 22) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Leo\n");
+    }
+    else if( (m == 8 && day >= 23) || (m == 9 && day <= 22) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Virgo\n");
+    }
+    else if( (m == 9 && day >= 23) || (m == 10 && day <= 22) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Libra\n");
+    }
+    else if( (m == 10 && day >= 23) || (m == 11 && day <= 21) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Scorpio\n");
+    }
+    else if( (m == 11 && day >= 22) || (m == 12 && day <= 21) )
+    {
+        printf("Your Zodiac Sign based on your Birth date is Sagittarius\n");
+    }
+    else
+    {
+        printf("Invalid Birth date entered\n");
+    }
     return 0;
 }
